@@ -1,7 +1,7 @@
 node{
    stage("App Build started"){
       echo 'App build started..'
-      git 'https://github.com/cenovus1234/python-docker-app.git'
+      git 'https://github.com/jab-we-met/python-docker-app.git'
       }
       
     stage("Docker Build"){
