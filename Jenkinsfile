@@ -17,7 +17,7 @@ node{
     }
     
     stage("App deployed"){
-     echo 'App deployed to Hub..'
+     echo 'App deployed to Hub...'
     }
 
 
