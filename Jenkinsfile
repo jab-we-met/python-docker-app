@@ -18,7 +18,6 @@ node{
                  sh 'docker tag jenkins-docker mtanweer/my_image:1.0'
           }
           
-        
      }
 
        stage('Results')
@@ -45,8 +44,8 @@ node{
     
     stage("App deployed")
     {
-         echo 'App deployed to Hub...'
-     }
+         echo 'App deployed to Docker Hub...'
+    }
 
 
 }
