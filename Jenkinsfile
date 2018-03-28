@@ -25,7 +25,7 @@ node{
       stage('Test Automation'){
        echo 'Deploy to Dev environment'
       }
-    }
+    
     
     stage("App deployed"){
      echo 'App deployed to Hub...'
