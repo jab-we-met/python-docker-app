@@ -1,7 +1,7 @@
 node{
-   stage("App Build started"){
-      echo 'App build started..'
-      git 'https://github.com/jab-we-met/python-docker-app.git'
+   stage('Git Checkout') { // for display purposes
+    echo 'Checout Code and clone it inside jenkins workspace.'
+    git 'https://github.com/jab-we-met/python-docker-app.git'
       }
       
     stage("Docker Build"){
