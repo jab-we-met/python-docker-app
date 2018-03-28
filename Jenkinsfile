@@ -1,18 +1,18 @@
 node{
    stage("App Build started"){
       echo 'App build started..'
-      git 'https://github.com/padmaavathy/python-docker-app.git'
+      git 'https://github.com/cenovus1234/python-docker-app.git'
       }
       
     stage("Docker Build"){
-     def app = docker.build "manee2k6/padmavathy"
+     def app = docker.build "mtanweer/cenovus1234"
      }
     
     stage("Tag & Push image"){
        withDockerRegistry([credentialsId: 'DockerID', url: 'https://hub.docker.com']) {
-          sh 'docker tag manee2k6/padmavathy manee2k6/padmavathy:001'
-          sh 'docker push manee2k6/padmavathy:latest'
-          sh 'docker push manee2k6/padmavathy:001'
+          sh 'docker tag jenkins-docker mtanweer/my_image:1.0'
+          sh 'docker push mtanweer/my_image:latest'
+         
       }
     }
     
