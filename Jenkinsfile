@@ -12,7 +12,18 @@ node{
        withDockerRegistry([credentialsId: 'DockerID', url: 'https://hub.docker.com']) {
           sh 'docker tag jenkins-docker mtanweer/my_image:1.0'
           
-         
+         stage('Results') {
+       echo 'Test Results are reported..'
+   
+   }
+   stage('Deploy to Dev'){
+       echo 'Deploy to Dev environment'
+   }
+   stage('Deploy to Test'){
+       echo 'Deploy to Test environment'
+   }
+      stage('Test Automation'){
+       echo 'Deploy to Dev environment'
       }
     }
     
