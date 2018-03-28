@@ -11,7 +11,7 @@ node{
     stage("Tag & Push image"){
        withDockerRegistry([credentialsId: 'DockerID', url: 'https://hub.docker.com']) {
           sh 'docker tag jenkins-docker mtanweer/my_image:1.0'
-          sh 'docker push mtanweer/my_image:latest'
+          
          
       }
     }
